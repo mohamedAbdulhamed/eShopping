@@ -1,0 +1,348 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,600&display=swap');
+@font-face{
+    font-family: 'mummy-font';
+    src: url(../data/fonts/JMH\ Mummy\ Fill.ttf);
+}
+:root{
+    --orange: #ff3300;
+    --gold: #ffa500;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    transition: all .2s cubic-bezier(.37, 1.14, 0.26, 1.24);
+}
+html, body {
+    scroll-behavior: smooth;
+}
+body{
+    background: #e3edf7;
+    /* height: 100vh; */
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+}
+*::selection{
+    background: var(--orange);
+    color: #fff;
+}
+::-webkit-scrollbar{
+    width: 8px;
+}
+::-webkit-scrollbar-track{
+    border-radius: 1px;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.336);
+}
+::-webkit-scrollbar-thumb{
+    border-radius: 5px;
+    background-color: #5c44008a;
+}
+::-webkit-scrollbar-thumb:hover{
+    background-color: #b6901fcb;
+}
+.mar-top-bottom{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+
+
+
+.id{
+    width: 820px;
+    display: flex;
+    justify-content: center;
+}
+.id h1{
+    font-family: sans-serif;
+    font-weight: bold;
+    color: #222;
+    font-size: 45px;
+    padding: 10px;
+}
+.objective{
+    width: 820px;
+    max-width: 820px;
+}
+.objective h1{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 11.5rem;
+    color: #555;
+    font-weight: bold;
+    padding-bottom: 30px;
+}
+.objective h1::before{
+    content: "";
+    position: absolute;
+    left: 50%;
+    height: 2px;
+    transform: translate(-50%, 18rem);
+    background-color: #ff3300;
+    top: 0rem;
+    width: 25rem;
+}
+.objective h1::after{
+    content: "";
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%,12.7rem);
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    border: 2px solid #ff3300;
+    background-color: transparent;
+}
+.objective p{
+    font-family: Calibri, 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+    font-size: 18px;
+    color: #333;
+    font-weight: 500;
+}
+
+.skills{
+    max-width: 820px;
+    display: flex;
+    justify-content: center;
+    background: #ebf2fa;
+    border-radius: 10px;
+    box-shadow: 0 35px 50px #0a1516c9;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+.skills h2{
+    position: absolute;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #424242;
+}
+.skills .skill{
+    width: 160px;
+    height: 160px;
+    position: relative;
+    margin: 50px;
+}
+.skills .skill .skill-name{
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+.skills .skill .skill-name h3{
+    position: absolute;
+    text-transform: uppercase;
+    font-weight: 400;
+    color: #424242;
+}
+.outer{
+    height: 160px;
+    width: 160px;
+    border-radius: 50%;
+    padding: 20px;
+    box-shadow: 6px 6px 10px -1px #00000026,
+     -6px -6px 10px -1px #ffffffb3;
+}
+.inner{
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: inset 4px 4px 6px -1px #00000033,
+        inset -4px -4px 6px -1px #ffffffb3,
+        -0.5px -0.5px 0px #ffffff,
+        0.5px 0.5px 0px #00000026,
+        0px 12px 10px -10px #0000000d;
+}
+#number{
+    font-weight: 600;
+    color: #555;
+}
+circle{
+    fill: none;
+    stroke: url(#GradientColor);
+    stroke-width: 20px;
+    stroke-dasharray: 472;
+    stroke-dashoffset: 472;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+}
+.circle.one{
+    animation-name: animone;
+}
+.circle.two{
+    animation-name: animtwo;
+}
+.circle.three{
+    animation-name: animthree;
+}
+
+svg{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.sections{
+    display: flex;
+    flex-flow: column;
+    width: 820px;
+    background: #ebf2fa;
+    box-shadow: 6px 6px 10px -1px #00000026,
+    -6px -6px 10px -1px #ffffffb3;
+}
+
+.sections h1{
+    color: #333;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 900;
+    padding: 0px 20px 10px 0px;
+    font-size: 30px;
+    letter-spacing: 1.5px;
+}
+.sections h1::after{
+    content: "";
+    position: absolute;
+    left: 50%;
+    height: 2px;
+    transform: translate(-102.5%, 40px);
+    background-color: #5c504d;
+    width: 25rem;
+}
+.sections ul{
+    list-style: disc inside none;
+}
+.sections ul li{
+    padding: 20px 0px 10px 15px;
+    font-family: Calibri, 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+}
+.sections .tech h2{
+    font-size: 20px;
+    color: #444;
+    font-weight: 600;
+}
+.sections .tech p{
+    padding: 15px 0px 10px 15px;
+    font-family: Calibri, 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@keyframes animone{
+    100%{
+        stroke-dashoffset: 165;
+    }
+}
+@keyframes animtwo{
+    100%{
+        stroke-dashoffset: 110;
+    }
+}
+@keyframes animthree{
+    100%{
+        stroke-dashoffset: 236;
+    }
+}
+
+
+/* Responsive */
+@media(max-width:1180px){
+    .id h1{
+        font-size: 30px;
+    }
+    .objective{
+        width: 600px;
+    }
+    .objective h1{
+        margin-top: 20px;
+        font-size: 3rem;
+    }
+    .objective h1::before{
+        height: 1px;
+        transform: translate(-50%, 15.5rem);
+    }
+    .objective h1::after{
+        transform: translate(-50%,10.22rem);
+        width: 20px;
+        height: 20px;
+        border-width: 1px;
+    }
+    .skills{
+        width: 600px;
+    }
+    .sections{
+        width: 600px;
+        justify-content: center;
+        text-align: center;
+    }
+    .sections h1::after{
+        height: 1px;
+        transform: translate(-50%, 40px);
+        background-color: #5c504de3;
+        width: 37.5rem;
+    }
+    .objective h1::after, .objective h1::before{
+        display: none;
+    }
+}
+@media(max-width:600px){
+    body{
+        width: 500px;
+        max-width: 500px;
+    }
+    .id{
+        width: 390px;
+    }
+    .id h1{
+        font-size: 25px;
+        align-items: flex-end;
+    }
+    .objective{
+        width: 400px;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .objective h1{
+        margin-top: 20px;
+        font-size: 2rem;
+    }
+    .objective h1::before{
+        height: 1px;
+        transform: translate(-50%, 15.5rem);
+    }
+    .objective h1::after{
+        transform: translate(-50%,10.22rem);
+        width: 20px;
+        height: 20px;
+        border-width: 1px;
+    }
+    .objective p{
+        color: black;
+    }
+    .objective h1::after, .objective h1::before{
+        display: none;
+    }
+    .skills{
+        width: 400px;
+    }
+    .sections h1::after{
+        width: 37.5rem;
+    }
+}
